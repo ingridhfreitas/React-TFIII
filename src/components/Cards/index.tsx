@@ -1,23 +1,23 @@
-import { Link } from "react-router-dom";
-import "./style.css";
+import { Link } from "react-router-dom"
+import "./styles.css"
 
 type CardProps = {
-  image: string;
-  title: string;
-  route: string;
-};
+    image: React.ReactNode;
+    title: string;
+    route: string;
+}
 
-const Cards = ({image, title, route} : CardProps) => {
+const Cards = ({image, title, route}: CardProps) => {
   return (
-    <Link to={route}>
-      <div className="cards">
-        <div className="image">
-          {image}
-          {title}
+    <Link to={route} style={{textDecoration: "none"}}>
+        <div className="cards">
+            <div className="image">
+                {image}
+                {title}
+            </div>
         </div>
-      </div>
     </Link>
-  );
-};
+  )
+}
 
 export default Cards

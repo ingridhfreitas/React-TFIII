@@ -1,11 +1,10 @@
+import "./styles.css"
 
 const Footer = () => {
   return (
     <footer className="footer">
-        <span>&#169; 2024 - Tecnologia para Front-end III - 2024.1</span>
-
+        <span>&#169; 2024 - Tecnologia para Front-End III - 2024.1</span>
     </footer>
-
   )
 }
 
