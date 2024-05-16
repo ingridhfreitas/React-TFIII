@@ -1,16 +1,14 @@
-import React from 'react'
-import { FaSun, FaMoon } from "react-icons/fa"
+import { FaSun, FaMoon } from "react-icons/fa";
 
 const ContextApi = () => {
-  const darkTheme = true;
+  const darkTheme = false;
+
   return (
     <div>
-      <span className='icon'>
-        { darkTheme ? <FaSun /> : <FaMoon />}
+      <span className="icon">
+        {darkTheme ? <FaMoon /> : <FaSun />}
       </span>
-      <button onClick={toogleTheme}>
-        {darkTheme ? <h1>Enable Light Theme : Enable Dark Theme}
-      </button>
+      <button>{darkTheme ? <h1>Enable Ligth Theme</h1> : <h1>Enable Dark Theme</h1>}</button>
     </div>
   )
 }
